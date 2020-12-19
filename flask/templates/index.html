@@ -1,0 +1,78 @@
+<html> 
+<body style="background-color : #9f5f80; margin:10px"> 
+    <h1 style="display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:70px;">Telecom Customer Churn Prediction</h1> 
+  
+<div style="display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;"> 
+  <form action="/result" method="POST"> 
+    <label for="credit_score">Credit Score (Please Enter a value between 300 and 850)</label> 
+		<input type="number" id="credit_score" name="credit_score"> 
+    <br>
+    <label for="geography">Geography</label> 
+    <select id="geography" name="geography"> 
+      <option value="0">France</option> 
+      <option value="1">Germany</option> 
+      <option value="2">Spain</option> 
+    </select> 
+    <br> 
+    <label for="gender">Gender</label> 
+    <select id="gender" name="gender"> 
+      <option value="0">Male</option> 
+      <option value="1">Female</option> 
+    </select> 
+    <br>
+	<label for="age">Age</label> 
+		<input type="number" id="age" name="age"> 
+    <br>	
+    <label for="tenure">Tenure (in Yrs.)</label> 
+    <select id="tenure" name="tenure"> 
+      <option value="0">0</option> 
+      <option value="1">1</option> 
+      <option value="2">2</option>
+      <option value="3">3</option> 
+      <option value="4">4</option> 
+      <option value="5">5</option>      
+	  <option value="6">6</option> 
+      <option value="7">7</option> 
+      <option value="8">8</option>
+	  <option value="9">9</option> 
+      <option value="10">10</option>
+    </select> 
+    <br> 
+    <label for="balance">Balance</label> 
+		<input id="balance" name="balance" pattern="^\d*(\.\d{0,2})?$">
+	<br>
+	<label for="number_of_products">Number of Products</label> 
+    <select id="number_of_products" name="number_of_products"> 
+      <option value="1">1</option> 
+      <option value="2">2</option> 
+      <option value="3">3</option> 
+      <option value="4">4</option> 
+      <option value="5">5</option> 
+    </select> 
+    <br> 
+    <label for="has_credit_card">Do you have a Credit Card?</label> 
+    <select id="has_credit_card" name="has_credit_card"> 
+      <option value="1">Yes</option> 
+      <option value="0">No</option> 
+    </select> 
+    <br> 
+    <label for="is_active_member">Are you an Active Member?</label> 
+    <select id="is_active_member" name="is_active_member"> 
+      <option value="1">Yes</option> 
+      <option value="0">No</option> 
+    </select>  
+    <br>
+	<label for="estimated_salary">Estimated Salary</label> 
+		<input id="estimated_salary" name="estimated_salary" pattern="^\d*(\.\d{0,2})?$">
+	<br> 
+    <input type="submit" value="Submit"> 
+  </form> 
+</div> 
+</body> 
+</html> 
